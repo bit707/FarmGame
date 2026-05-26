@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4380a20b42b542b4093b2108e1f84b43, type: 3}
+  m_Name: Turnip_Crop
+  m_EditorClassIdentifier: 
+  itemName: "\u841D\u535C"
+  description: "\u6536\u83B7\u7684\u841D\u535C\uFF0C\u53EF\u4EE5\u51FA\u552E\u3002"
+  icon: {fileID: 21300000, guid: ee3a032d69253b547bfc83d180ad05ea, type: 3}
+  itemType: 1
+  maxStack: 99
+  sellPrice: 60
+  buyPrice: 0
+  canSell: 1
+  cropData: {fileID: 0}
+  worldPrefab: {fileID: 0}

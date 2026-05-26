@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4380a20b42b542b4093b2108e1f84b43, type: 3}
+  m_Name: WateringCan
+  m_EditorClassIdentifier: 
+  itemName: WateringCan
+  description: "\u6C34\u58F6 - \u6D47\u704C\u4F5C\u7269"
+  icon: {fileID: 21300000, guid: 6a2c401e7835d74428823ff880bfa0a0, type: 3}
+  itemType: 4
+  maxStack: 1
+  sellPrice: 0
+  buyPrice: 0
+  canSell: 0
+  cropData: {fileID: 0}
+  worldPrefab: {fileID: 0}

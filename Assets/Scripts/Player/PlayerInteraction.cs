@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -23,6 +22,9 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         UpdateTileHighlight();
+
+        if (Input.GetMouseButtonDown(0) && hasTileTarget)
+            DoInteract();
     }
 
     void UpdateTileHighlight()
@@ -47,10 +49,8 @@ public class PlayerInteraction : MonoBehaviour
         if (tileHighlight != null) tileHighlight.SetActive(false);
     }
 
-    public void OnInteract(InputAction.CallbackContext ctx)
+    void DoInteract()
     {
-        if (!ctx.performed || !hasTileTarget) return;
-
         var inventory = GameManager.Instance.Inventory;
         var equipped = inventory.GetEquippedItem();
         if (equipped == null) return;

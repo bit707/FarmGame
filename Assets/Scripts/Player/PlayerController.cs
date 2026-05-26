@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -33,9 +32,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        ReadInput();
         ApplyGravity();
         Move();
         UpdateAnimator();
+    }
+
+    void ReadInput()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        moveInput = new Vector2(h, v);
+        isRunning = Input.GetKey(KeyCode.LeftShift);
     }
 
     void ApplyGravity()
@@ -76,12 +84,5 @@ public class PlayerController : MonoBehaviour
         float speed = IsMoving ? (isRunning ? 1f : 0.5f) : 0f;
         animator.SetFloat(AnimSpeed, speed, 0.1f, Time.deltaTime);
         animator.SetBool(AnimIsGrounded, controller.isGrounded);
-    }
-
-    public void OnMove(InputAction.CallbackContext ctx) => moveInput = ctx.ReadValue<Vector2>();
-    public void OnRun(InputAction.CallbackContext ctx)
-    {
-        if (ctx.started) isRunning = true;
-        else if (ctx.canceled) isRunning = false;
     }
 }

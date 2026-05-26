@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8aacff26b36b5f419e20c89567383e0, type: 3}
+  m_Name: Potato
+  m_EditorClassIdentifier: 
+  cropName: "\u571F\u8C46"
+  icon: {fileID: 21300000, guid: 65303284a6929e24ba1ec57ec1d8f168, type: 3}
+  daysToGrow: 6
+  regrowDays: 0
+  growSeasons: 00000000
+  seedPrice: 50
+  harvestItem: {fileID: 11400000, guid: 22f9d5e2df885424ca4e2e5ad10f1269, type: 2}
+  growthStagePrefabs: []
+  harvestEffect: {fileID: 0}
+  silverChance: 0.2
+  goldChance: 0.05
